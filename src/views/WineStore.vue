@@ -81,14 +81,7 @@
         <h1 class="headline">Запись на дегустацию</h1>
         <div class="line"></div>
         <p class="headline__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum.</p>
-        <form>
-            <div class="wrapper">
-            <input type="text" placeholder="Имя" class="tel-Name">
-            <input type="tel" placeholder="Телефон" class="tel-Name">
-            </div>
-            <input type="text" placeholder="Бутик на Невском 103" class="form-text">
-            <input type="button" value="Записаться" class="form-button">
-        </form>
+        <WineInput></WineInput>
         </div>
     </div>
     </div>
@@ -358,45 +351,7 @@ th {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-form {
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-}
-::placeholder {
-    color: #fff;
-}
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    border: none;
-}
-.tel-Name {
-    border-bottom: 1px solid #fff;
-    background-color: #282828;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    width: 46%;
-    height: 40px;
-    margin-bottom: 20px;
-}
-.form-text {
-    border-bottom: 1px solid #fff;
-    background-color: #282828;
-    border-right: none;
-    border-left: none;
-    border-top: none ;
-    height: 40px;
-    margin-bottom: 50px;
-}
-.form-button {
-    border: 1px solid #fff;
-    background-color: #282828;
-    color: #fff;
-    height: 50px;
-    text-transform: uppercase;
-}
+
 .grape {
     position: absolute;
     right: 800px;
@@ -484,10 +439,7 @@ footer {
 
 </style>
 
-<script>
-
-    export default {
-
-    }
+<script setup>
+import WineInput from '../components/icons/WineInput.vue';
 
 </script>
