@@ -1,11 +1,11 @@
 <template>
-    <form>
+    <form @submit.prevent>
             <div class="wrapper">
-            <InputGui type="text" placeholder="Имя" class="tel-Name"/>
-            <InputGui type="tel" placeholder="Телефон" class="tel-Name"/>
+            <InputGui v-model="name" type="text" placeholder="Имя" class="tel-Name"/>
+            <InputGui v-model="tel" type="tel" placeholder="Телефон" class="tel-Name"/>
             </div>
-            <InputGui type="text" placeholder="Бутик на Невском 103" class="form-text"/>
-            <button class="form-button">Записаться</button>
+            <InputGui v-model="adress" type="text" placeholder="Бутик на Невском 103" class="form-text"/>
+            <button id="safe" v-on:click="outputOnConsole()" class="form-button">Записаться</button>
         </form>
 </template>
 
@@ -52,5 +52,14 @@ form {
 </style>
 
 <script setup>
-    import InputGui from './gui/InputGui.vue';
+    import { ref } from 'vue';
+import InputGui from './gui/InputGui.vue';
+
+    const name = ref('')
+    const tel = ref('')
+    const adress = ref('');
+
+    function outputOnConsole() {
+        console.log(name.value, tel.value, adress.value)
+    };
 </script>

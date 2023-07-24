@@ -1,5 +1,9 @@
 <template>
-    <input v-model="input"/>
+    <input
+    :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)"
+  />
+
 </template>
 
 <style>
@@ -10,5 +14,7 @@
 </style>
 
 <script setup>
+defineProps(['modelValue'])
+defineEmits(['update:modelValue'])
 
 </script>
