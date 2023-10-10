@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import StoreHeader from '../components/parts_of_the_site/StoreHeader.vue'
 import WineStore from '../views/WineStore.vue'
 
 const router = createRouter({
