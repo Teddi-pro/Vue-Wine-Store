@@ -50,7 +50,7 @@
         <h1 class="headline">Запись на дегустацию</h1>
         <div class="line"></div>
         <p class="headline__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum.</p>
-        <WineInput></WineInput>
+        <DegustationBookingForm></DegustationBookingForm>
         </div>
     </div>
     </div>
@@ -244,5 +244,5 @@ th {
 </style>
 
 <script setup>
-import WineInput from '../WineInput.vue'
+import DegustationBookingForm from '../DegustationBookingForm.vue';
 </script>

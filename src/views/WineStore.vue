@@ -22,7 +22,7 @@
 </style>
 
 <script setup>
-import StoreHeader from '../components/icons/parts_of_the_site/StoreHeader.vue';
-import StoreMain from '../components/icons/parts_of_the_site/StoreMain.vue';
-import StoreFooter from '../components/icons/parts_of_the_site/StoreFooter.vue';
+import StoreHeader from '../components/parts_of_the_site/StoreHeader.vue';
+import StoreMain from '../components/parts_of_the_site/StoreMain.vue';
+import StoreFooter from '../components/parts_of_the_site/StoreFooter.vue';
 </script>
